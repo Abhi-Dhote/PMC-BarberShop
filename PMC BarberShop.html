@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMC Barbershop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="PMC Barbershop">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-contact" id="header-contact">
+            <!-- <button aria-label="Toggle theme"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-palette h-5 w-5" aria-hidden="true">
+                <path
+                    d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
+                </path>
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+            </svg>
+            <!-- </button> -->
+
+            <!-- <button aria-label="Toggle language"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-globe h-5 w-5" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+            </svg>
+            <span class="sr-only">English</span>
+            <!-- </button> -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone h-4 w-4 text-primary" aria-hidden="true">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+            <span class="phone">+1 940 808 1569</span>
+            <button class="btn">Book an Appointment</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p class="tagline">Premium Barber Services in Denton</p>
+            <h1>Classic Cuts, Modern<br />Style</h1>
+            <h2><span class="highlight">Premium Barber Shop</span></h2>
+            <p class="description">
+                At PMC Barbershop, we combine traditional barbering techniques with modern styling to give you the
+                perfect look. Our experienced barbers deliver precision cuts, beard grooming, and relaxing hot towel
+                shaves in a classic barbershop atmosphere.
+            </p>
+            <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-primary mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>Denton, TX</div>
+            <div class="cta-buttons">
+         
+                <button class="btn secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone h-4 w-4 text-primary-btn" aria-hidden="true">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg> Our Services</button>
+                
+            <button class="btn primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone h-4 w-4 text-primary-btn" aria-hidden="true">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>Book Now</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="hero.png" alt="Barbershop Team" />
+        </div>
+    </section>
+ <!-- Second Brake -->
+<section class="about">
+    <div class="section-header">
+      <div style="color: #ffc107; font-weight: bold;">Our Story</div>
+      <h2>About PMC Barbershop</h2>
+      <p>Established in 2018, PMC Barbershop has been providing premium grooming services to the men of Denton, TX. Our mission is to deliver exceptional haircuts and grooming services in a welcoming, classic barbershop environment.</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-image">
+        <img src="about(1).jpg" alt="PMC Barbershop">
+        <div class="experience-badge">5+ years</div>
+      </div>
+      <div class="about-text">
+        <p>Established in 2018, PMC Barbershop has been providing premium<br>grooming services to the men of Denton, TX. Our mission is to deliver<br>exceptional haircuts and grooming services in a welcoming, classic<br>barbershop environment.</p>
+        <blockquote>
+          <div style="color: #ffc107; font-weight: bold;font-size: x-large;">"</div>We take pride in our attention to detail and personalized service, ensuring<br>each client leaves looking and feeling their best. Our skilled barbers<br>combine traditional techniques with modern trends to create custom styles<br>that suit each individual's personality and lifestyle.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Third break -->
+
+<body>
+  <section class="services-section">
+    <div style="color: #ffc107; font-weight: bold;">Premium Grooming</div>
+    <h2>Our Barber Services</h2>
+    <p class="sub-heading">Professional barbering services to keep you looking sharp for everyday confidence or special occasions.</p>
+
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon-box">
+          <img src="hair-styling-icon.svg" alt="Haircuts Icon">
+        </div>
+        <h3>Haircuts</h3>
+        <p>Our skilled barbers deliver precision haircuts tailored to your style and face shape. From classic cuts to modern fades.</p>
+        <ul>
+          <li>Classic Cuts</li>
+          <li>Modern Styles</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">
+          <img src="makeup-icon.svg" alt="Beard Icon">
+        </div>
+        <h3>Beard Services</h3>
+        <p>Maintain your facial hair with our premium beard services, shaping and trims with hot towel shaves.</p>
+        <ul>
+          <li>Beard Trims</li>
+          <li>Beard Shaping</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">
+          <img src="skincare-icon.svg" alt="Premium Icon">
+        </div>
+        <h3>Premium Services</h3>
+        <p>Enhance your look with expert hair coloring, scalp treatments, and styling for special occasions.</p>
+        <ul>
+          <li>Hair Coloring</li>
+          <li>Scalp Treatments</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
